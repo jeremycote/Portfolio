@@ -1,0 +1,35 @@
+.centered-paragraph{
+
+  margin : 0 auto; /* step 1: center the paragraph on the page */
+  width: 70%; /* you have to give it a width, or else the browser thinks it's as wide as the whole page */
+  /*border : 1px solid black; /* i gave it a border just so you can see what's happening more clearly */
+  text-align : justify; /* step 2, make sure the text inside the paragraph is left-aligned. this is the default, but it doesn't hurt to declare it exlpicitly */
+}
+/* You can add global styles to this file, and also import other style files */
+.limit {
+  width: 500px;
+  word-wrap: break-word;
+}
+.centered-paragraph{
+
+  margin : 0 auto; /* step 1: center the paragraph on the page */
+  width: 70%; /* you have to give it a width, or else the browser thinks it's as wide as the whole page */
+  /*border : 1px solid black; /* i gave it a border just so you can see what's happening more clearly */
+  text-align : justify; /* step 2, make sure the text inside the paragraph is left-aligned. this is the default, but it doesn't hurt to declare it exlpicitly */
+}
+.card{
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+.card-body{
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template: 64px / auto auto;
+  grid-gap: 2px;
+}
+.project-blurb{
+  text-align: justify;
+}
