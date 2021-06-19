@@ -6,19 +6,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { NavbarComponent} from "./shared/navbar/navbar.component";
-import { FooterComponent} from "./shared/footer/footer.component";
+import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     NavbarComponent,
-    FooterComponent
+    SkillsComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CollapseModule
+    CollapseModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
