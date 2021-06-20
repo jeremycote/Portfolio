@@ -34,7 +34,9 @@
                                 </p>
                                 <div class="row">
                                     <img width="44" src="./assets/img/icons/dev/swift-original.svg">
-                                    <img style="padding-left: 5px;" src="./assets/img/apple/DownloadMacEn.svg">
+                                    <a href="https://apps.apple.com/ca/app/ifavs-link-file-manager/id1523364813?mt=12">
+                                        <img style="padding-left: 5px;" src="./assets/img/apple/DownloadMacEn.svg">
+                                    </a>
                                 </div>
 
                             </div>
@@ -75,10 +77,20 @@
                     <h1 class="display-2" id="5x5">5x5</h1>
                     <p class="card-text"></p>
                     <div class="row">
-                        <div class="col">
+                        <div  class="col">
 
                             <ngb-carousel>
-                                <img width="256" src="./assets/img/screenshots/5x5iPhone.png">
+
+                                <ng-template ngbSlide>
+                                    <img class="img-fluid projectCarouselImg" src="./assets/img/screenshots/5x5iPhone.png" alt="First slide">
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img class="img-fluid projectCarouselImg" src="./assets/img/screenshots/5x5iPhone.png" alt="Second slide">
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img class="img-fluid projectCarouselImg" src="./assets/img/screenshots/5x5iPhone.png" alt="Third slide">
+                                </ng-template>
+
                             </ngb-carousel>
 
                         </div>
@@ -109,8 +121,21 @@
                 <div class="card-body">
                     <h1 class="display-2" id="500">Five Hundreds</h1>
                     <p class="card-text"></p>
-                    <ul class="list-unstyled" style="text-align: left">
-                    </ul>
+                    <div class="row">
+                        <img width="256" style="border: 2px solid black; border-radius: 10px 10px 10px 10px;" src="./assets/img/screenshots/Ace.png">
+                        <div class="col">
+                            <p class="project-blurb">
+                                Play a classic 4 player card game against AI trained using Unity's ml-agents toolkit.
+                            </p>
+                            <p class="project-blurb">
+                                Coded in C# and trained using PyTorch.
+                            </p>
+                            <div class="row">
+                                <img width="44" src="./assets/img/icons/dev/csharp-original.svg">
+                            </div>
+
+                        </div>
+                    </div>
                     <p></p>
                 </div>
             </div>
