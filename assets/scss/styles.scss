@@ -56,3 +56,18 @@ img {
   border: 2px solid black;
   border-radius: 10px 10px 10px 10px;
 }
+.col-container-Project {
+  display: table; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+}
+
+.col-Project {
+  display: table-cell; /* Make elements inside the container behave like table cells */
+  width: 50%;
+}
+@media only screen and (max-width: 600px) {
+  .col-Project {
+    display: block;
+    width: 100%;
+  }
+}
