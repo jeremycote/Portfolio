@@ -1,10 +1,8 @@
 <h1 id="projects">My Projects</h1>
-<div class="container">
-    <div class="row">
-
-        <div class="col">
+<div class="container col-container-Project">
+        <div class="col col-Project">
             <!-- iFavs -->
-            <div style="height: 25em" class="card">
+            <div class="card">
                 <div class="card-body">
                     <h1 class="display-2" id="iFavs">iFavs</h1>
                     <p class="card-text"></p>
@@ -19,13 +17,24 @@
                                 <p class="project-blurb">
                                     Entirely written in Swift, iFavs lives in MacOS' menubar for quick and easy access.
                                 </p>
+                                <div class="containerDesc">
+                                    <div>
+                                        <img width="44" src="./assets/img/icons/dev/swift-original.svg">
+                                    </div>
+                                    <div>
+                                        <a href="https://apps.apple.com/ca/app/ifavs-link-file-manager/id1523364813?mt=12">
+                                            <img style="padding-left: 5px;" src="./assets/img/apple/DownloadMacEn.svg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--
                                 <div class="row">
                                     <img width="44" src="./assets/img/icons/dev/swift-original.svg">
                                     <a href="https://apps.apple.com/ca/app/ifavs-link-file-manager/id1523364813?mt=12">
                                         <img style="padding-left: 5px;" src="./assets/img/apple/DownloadMacEn.svg">
                                     </a>
                                 </div>
-
+                                -->
                             </div>
                         </div>
                     <p></p>
@@ -33,7 +42,7 @@
             </div>
 
             <!-- 5x5 -->
-            <div style="height: 35em" class="card">
+            <div class="card">
                 <div class="card-body">
                     <h1 class="display-2" id="5x5">5x5</h1>
                     <p class="card-text"></p>
@@ -68,9 +77,9 @@
 
         </div>
 
-        <div class="col">
+        <div class="col col-Project">
             <!-- Pedalboard -->
-            <div style="height: 38em" class="card">
+            <div class="card">
                 <div class="card-body">
                     <h1 style="margin-bottom: -1em;" class="display-2" id="pedalboard">Pedalboard</h1>
                     <br/>
@@ -95,7 +104,7 @@
                 </div>
             </div>
             <!-- Five Hundreds -->
-            <div style="height: 22em" class="card">
+            <div class="card">
                 <div class="card-body">
                     <h1 class="display-2" id="500">Five Hundreds</h1>
                     <p class="card-text"></p>
@@ -110,8 +119,10 @@
                             <p class="project-blurb">
                                 Coded in C# and trained using PyTorch.
                             </p>
-                            <button class="btn btn-icon btn-3 btn-default"type="button">
-                                <span class="btn-inner--text">View on GitHub</span>
+                            <button  class="btn btn-icon btn-3 btn-default"type="button">
+                                <a href="https://github.com/jeremycote/FiveHundreds">
+                                    <span style="color: white" href="https://github.com/jeremycote/FiveHundreds" class="btn-inner--text">View on GitHub</span>
+                                </a>
                             </button>
                         </div>
                     </div>
@@ -135,5 +146,4 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
