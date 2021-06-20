@@ -1,9 +1,10 @@
 <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
-  <div class="container">
-    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
-          [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div class="container" style=" display: flex; justify-content: flex-end">
+      <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+              [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
     <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
 
       <ul class="navbar-nav align-items-lg-center">

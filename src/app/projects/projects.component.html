@@ -1,30 +1,17 @@
 <h1 id="projects">My Projects</h1>
-<style>
-    .containerDesc {
-        display: flex;
-        align-items: center;
-        justify-content: center
-    }
-    img {
-        max-width: 100%
-    }
-    .imageDesc {
-        flex-basis: 20%
-    }
-    .textDesc {
-        padding-left: 20px;
-    }
-</style>
 <div class="container">
     <div class="row">
-        <!-- iFavs -->
+
         <div class="col">
-            <div class="card">
+            <!-- iFavs -->
+            <div style="height: 420px" class="card">
                 <div class="card-body">
                     <h1 class="display-2" id="iFavs">iFavs</h1>
                     <p class="card-text"></p>
                         <div class="row">
-                            <img width="256" src="./assets/img/brand/iFavs-icon.png">
+                            <div class="col">
+                                <img class="img-fluid" src="./assets/img/brand/iFavs-icon.png">
+                            </div>
                             <div class="col">
                                 <p class="project-blurb">
                                     Organise and use all of your links, files, and apps using iFavs.
@@ -45,59 +32,20 @@
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-body">
-                    <div style="line-height: 0%">
-                        <h1 style="margin-bottom: -1em;" class="display-2" id="pedalboard">Pedalboard</h1>
-                        <img width="360" style="transform: rotate(270deg);" src="./assets/img/screenshots/PedalboardiPad.png">
-                    </div>
-
-                    <p class="card-text project-blurb">
-                        Written in Swift, Pedalboard uses the AudioKit library to apply digital sound processing in real time. Simply plug-in your instrument or microphone and your ready to go.
-                    </p>
-                    <br />
-                    <div class="containerDesc">
-                        <div class="imageDesc">
-                            <img width="128" src="./assets/img/icons/dev/swift-original.svg">
-                        </div>
-                        <div class="textDesc">
-                            <h4><strong>
-                                Coming soon to the Apple App Store
-                            </strong></h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 5x5 -->
-        <div class="col">
-            <div class="card">
+            <!-- 5x5 -->
+            <div style="height: 530px" class="card">
                 <div class="card-body">
                     <h1 class="display-2" id="5x5">5x5</h1>
                     <p class="card-text"></p>
                     <div class="row">
                         <div  class="col">
-
-                            <ngb-carousel>
-
-                                <ng-template ngbSlide>
-                                    <img class="img-fluid projectCarouselImg" src="./assets/img/screenshots/5x5iPhone.png" alt="First slide">
-                                </ng-template>
-                                <ng-template ngbSlide>
-                                    <img class="img-fluid projectCarouselImg" src="./assets/img/screenshots/5x5iPhone.png" alt="Second slide">
-                                </ng-template>
-                                <ng-template ngbSlide>
-                                    <img class="img-fluid projectCarouselImg" src="./assets/img/screenshots/5x5iPhone.png" alt="Third slide">
-                                </ng-template>
-
-                            </ngb-carousel>
+                            <img class="img-fluid" src="./assets/img/screenshots/5x5iPhone.png" alt="First slide">
 
                         </div>
 
                         <div class="col">
                             <p class="project-blurb">
-                                5x5 Math Puzzles designed to put your arithmetic skills to the test.
+                                5x5 Math Puzzles puts your arithmetic skills to the test with grid based puzzles.
                             </p>
                             <p class="project-blurb">
                                 Written in C#, this game uses Unity for rendering and fluid interaction with the user.
@@ -117,10 +65,57 @@
                     <p></p>
                 </div>
             </div>
-            <div class="card">
+
+        </div>
+
+        <div class="col">
+            <!-- Pedalboard -->
+            <div style="height: 600px" class="card">
+                <div class="card-body">
+                    <h1 style="margin-bottom: -1em;" class="display-2" id="pedalboard">Pedalboard</h1>
+                    <br/>
+                    <br/>
+                    <div>
+                        <img class="img-fluid" src="./assets/img/screenshots/PedalboardiPad.png">
+                    </div>
+
+                    <p class="card-text project-blurb">
+                        Written in Swift, Pedalboard uses the AudioKit library to apply digital sound processing in real time. Simply plug-in your instrument or microphone and start playing.
+                    </p>
+                    <div class="containerDesc">
+                        <div class="imageDesc">
+                            <img width="128" src="./assets/img/icons/dev/swift-original.svg">
+                        </div>
+                        <div class="textDesc">
+                            <h4><strong>
+                                Coming soon to the Apple App Store
+                            </strong></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Five Hundreds -->
+            <div style="height: 350px" class="card">
                 <div class="card-body">
                     <h1 class="display-2" id="500">Five Hundreds</h1>
                     <p class="card-text"></p>
+                    <div class="containerDesc">
+                        <div class="imageLargeDesc">
+                            <img class="playingCard" src="./assets/img/screenshots/Ace.png">
+                        </div>
+                        <div class="textDesc">
+                            <p class="project-blurb">
+                                Play a classic 4 player card game against AI trained using Unity's ml-agents toolkit.
+                            </p>
+                            <p class="project-blurb">
+                                Coded in C# and trained using PyTorch.
+                            </p>
+                            <button class="btn btn-icon btn-3 btn-default"type="button">
+                                <span class="btn-inner--text">View on GitHub</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!--
                     <div class="row">
                         <img width="256" style="border: 2px solid black; border-radius: 10px 10px 10px 10px;" src="./assets/img/screenshots/Ace.png">
                         <div class="col">
@@ -136,7 +131,7 @@
 
                         </div>
                     </div>
-                    <p></p>
+                    -->
                 </div>
             </div>
         </div>
