@@ -21,9 +21,6 @@
   margin-bottom: 12px;
   margin-top: 12px;
 }
-.card-body{
-
-}
 
 .grid-container {
   display: grid;
@@ -36,4 +33,26 @@
 
 .projectCarouselImg{
   width: 256px;
+}
+
+.containerDesc {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+img {
+  max-width: 100%
+}
+.imageDesc {
+  flex-basis: 20%
+}
+.imageLargeDesc {
+  flex-basis: 70%
+}
+.textDesc {
+  padding-left: 20px;
+}
+.playingCard{
+  border: 2px solid black;
+  border-radius: 10px 10px 10px 10px;
 }
