@@ -23,7 +23,7 @@ import { FooterComponent} from "./shared/footer/footer.component";
     NavbarComponent,
     SkillsComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
