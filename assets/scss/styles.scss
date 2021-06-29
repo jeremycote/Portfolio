@@ -60,6 +60,12 @@ img {
   display: table; /* Make the container element behave like a table */
   width: 100%; /* Set full-width to expand the whole page */
 }
+.centered-buttons {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .col-Project {
   display: table-cell; /* Make elements inside the container behave like table cells */
