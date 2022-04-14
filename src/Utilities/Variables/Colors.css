@@ -1,0 +1,6 @@
+body {
+    --color-white: rgb(255, 255, 255);
+    --color-accent: rgb(158, 9, 245);
+    --color-primary: rgb(23,43,77);
+    --color-call-to-action: rgb(162, 243, 95);
+}  
