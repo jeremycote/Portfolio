@@ -1,50 +1,208 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 .App {
+  text-align: left;
+}
+
+/* p {
+  font-size: 1.2em;
+} */
+
+h1, h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head-content {
+  position: relative;
+  overflow: hidden;
+  color: var(--color-white);
+
+  /* Top left, Top right, Bottom right, Bottom left*/
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  
+  background: linear-gradient(150deg,rgb(40 20 131) 15%,#8f6ed5 70%,#d782d9 94%);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head-content::after {
+  content: "";
+  border-radius: 50%;
+  background-color: rgba(256,256,256,0.1);
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 4em;
+  height: 4em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.head-title {
+  padding: 8rem 0;
+}
+
+.head-title h1 {
+  font-size: 3em;
+}
+
+.head-title p {
+  text-align: center;
+}
+
+.header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.header img {
+  height: 100%;
+  width: 100%;
+}
+
+.header > :first-child {
+  margin-left: 8em;
+}
+
+.header > :last-child {
+  margin-right: 8em;
+}
+
+.margin-right-auto {
+  margin-right: auto;
+}
+
+.content {
+  display: flex;
+  width: 60%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+  flex-direction: column;
+  padding: 0;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.project-grid {
+  display: grid;
+  grid-template-areas: 
+    "a b"
+    "c b"
+    "c d"
+    "e d"
+    "e f"
+  ;
+  gap: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.project-grid > :nth-child(1) {
+  grid-area: a;
+}
+
+.project-grid > :nth-child(2) {
+  grid-area: b;
+}
+
+.project-grid > :nth-child(3) {
+  grid-area: c;
+}
+
+.project-grid > :nth-child(4) {
+  grid-area: d;
+}
+
+.project-grid > :nth-child(5) {
+  grid-area: e;
+}
+
+.project-grid > :nth-child(6) {
+  grid-area: f;
+}
+
+.section {
+  width: 100%;
+  height: 100%;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  margin: 1rem 1rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  /* margin: 1rem 1rem; */
 }
-
+.project-grid > div,
 .grid > div {
   border: rgba(0,0,0,0.1) solid 0.1rem;
   padding: 1rem 1rem;
 }
+
+.footer {
+  position: relative;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 2;
+  grid-auto-flow: column;
+  margin: 8rem 15%;
+}
+
+.footer h1, .footer h2 {
+  text-align: left;
+  margin: 0.4em;
+}
+
+.footer a {
+  border-radius: 10%;
+  text-align: center;
+  
+  text-decoration: none;
+  padding: 1em 1em;
+  border-radius: 0.5em;
+  box-shadow: 0.25em 0.25em 0.25em 0 rgba(0, 0, 0, 0.25);
+  margin: 1rem;
+  height: fit-content;
+  text-transform: uppercase;
+}
+
+.footer .flex-row {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-call-to-action {
+  background-color: var(--color-call-to-action);
+  color: var(--color-white);
+}
+
+.button-dark {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+/* .footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  bottom: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.05);
+  transform: skew(0, -8deg);
+  
+} */

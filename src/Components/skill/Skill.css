@@ -1,0 +1,13 @@
+.skill-cell {
+    text-align: left;
+}
+
+.skill-cell ul {
+    list-style-image: url('../../assets/images/utilities/check.svg');
+    list-style-type: circle;
+    column-count: 2;
+}
+
+.skill-cell ul li {
+    margin-bottom: 0.   75em;
+}

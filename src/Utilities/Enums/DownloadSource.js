@@ -1,7 +1,11 @@
+import downloadMacEn from '../../assets/images/download/DownloadMacEn.svg';
+import downloadiOSEn from '../../assets/images/download/DownloadiOSEn.svg';
+import downloadGoogle from '../../assets/images/download/DownloadGoogle.png';
+
 class DownloadSource {
-    static AppleStoreMac = new DownloadSource("images/DownloadMacEn.svg");
-    static AppleStore = new DownloadSource("images/DownloadiOSEn.svg");
-    static GoogleStore = new DownloadSource("images/DownloadGoogle.png");
+    static AppleStoreMac = new DownloadSource(downloadMacEn);
+    static AppleStore = new DownloadSource(downloadiOSEn);
+    static GoogleStore = new DownloadSource(downloadGoogle);
     
     constructor(url) {
         this.url = url;

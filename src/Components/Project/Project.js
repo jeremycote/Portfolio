@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import DownloadSource from '../../Utilities/Enums/DownloadSource';
+import DownloadSource from '../../utilities/enums/DownloadSource';
 
 import './Project.css'
 
@@ -51,7 +51,7 @@ class Project extends React.Component {
         const protraitContent = <div className='project-cell portrait'>
             <h1 className='grid-col-span-2'>{this.state.title}</h1>
 
-            <img onLoad={this.onImgLoad} src={this.state.imgUrl}/>
+            <img className='project-image' onLoad={this.onImgLoad} src={this.state.imgUrl}/>
 
             <div>
                 {this.state.description}
