@@ -57,6 +57,11 @@ h1, h2 {
   margin-top: 2em;
 }
 
+.header a:hover {
+  color: var(--color-call-to-action);
+  cursor:pointer;
+}
+
 .header img {
   height: 100%;
   width: 100%;
@@ -74,6 +79,11 @@ h1, h2 {
   margin-right: auto;
 }
 
+.landing {
+  height: 400px;
+  background-color: cyan;
+}
+
 .content {
   display: flex;
   width: 60%;
@@ -82,6 +92,10 @@ h1, h2 {
   flex-direction: column;
   padding: 0;
   margin: auto;
+}
+
+.section h2 {
+  font-size: 2em;
 }
 
 .project-grid {

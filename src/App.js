@@ -2,6 +2,7 @@ import './App.css';
 import Project from './components/project/Project';
 import DownloadSource from './utilities/enums/DownloadSource'
 import Skill from './components/skill/Skill';
+import Landing from './components/landing/Landing';
 
 // Images
 import iFavsImage from './assets/images/projects/iFavs-icon.png';
@@ -35,6 +36,8 @@ function App() {
           <p>Software Developer</p>
         </div>
       </div>
+      {/* <Landing className="landing" title="Jeremy\nCôté" imgUrl={iFavsImage}/> */}
+
       <div className='content'>
         <div className='section'>
           <h2>About me</h2>
@@ -48,10 +51,14 @@ function App() {
         <div className='section'>
           <h2>My Skills</h2>
           <div className="grid">
-            <Skill title="Languages" elements={['C#', 'Swift',,'C++','Python','Java','JavaScript', 'TypeScript']}/>
-            <Skill title="Frameworks" elements={['Unity','SwiftUI','WxWidgets','Unreal Engine']}/>
-            <Skill title="Web Development" elements={['HTML', 'CSS', 'React JS', 'Angular JS']}/>
-            <Skill title="Dev Tools" elements={['TestFlight', 'Git', 'apt', 'npm', 'Virtualization']}/>
+            <Skill title="Languages" elements={['C#', 'Swift','C++','Python','Java', 'Scala']}/>
+            <Skill title="Graphical UI" elements={['Unity','SwiftUI','WxWidgets','Unreal Engine', 'Lanterna']}/>
+            <Skill title="Web Development" elements={['HTML', 'CSS', 'React JS', 'Angular JS', 'JavaScript', 'TypeScript']}/>
+            <Skill title="Dependency Management" elements={['apt', 'npm', 'Yarn', 'Maven']}/>
+            <Skill title="Databases" elements={['Spark', 'SQL', 'Flyway', 'Redis', 'PySpark']}/>
+            <Skill title="Collaboration" elements={['Jira', 'Confluence', 'Git']}/>
+            <Skill title="Deployment" elements={['Docker', 'Kubernetes', 'Apple TestFlight']}/>
+            <Skill title="Testing" elements={['JUnit', 'ScalaTest', 'XCode Test', 'PyTest']}/>
           </div>
         </div>
         
