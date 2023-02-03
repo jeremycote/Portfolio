@@ -1,4 +1,4 @@
-<footer class="footer" [ngClass]="{'has-cards': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login'}">
+<footer id="contact" class="footer" [ngClass]="{'has-cards': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login'}">
   <div class="container">
     <div class="row row-grid align-items-center" [ngClass]="{'my-md': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login', 'mb-5':getPath()==='/user-profile' || getPath()==='/register' || getPath()==='/login'}">
       <div class="col-lg-6">
@@ -10,6 +10,9 @@
           <button type="button" class="btn btn-success">jeremymcote@hdh-analytics.com</button>
         </a>
         <span style="padding-right: 10px"></span>
+        <a target="_blank" href="https://www.linkedin.com/in/jeremy-cote-24b100246/" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Linked In">
+          <i class="fa fa-linkedin"></i>
+        </a>
         <a target="_blank" href="https://github.com/jeremycote" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Github">
           <i class="fa fa-github"></i>
         </a>
